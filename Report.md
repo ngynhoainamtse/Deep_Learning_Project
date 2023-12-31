@@ -225,9 +225,7 @@ print_params(net)
 
 Diffusion models are a class of generative AI models that generate high-resolution images of varying quality. They work by gradually adding Gaussian noise to the original data in the forward diffusion process and then learning to remove the noise in the reverse diffusion process. They are latent variable models referring to a hidden continuous feature space, look similar to VAEs(Variational Autoencoders), and are loosely based on non-equilibrium thermodynamics.
 
-<div>
-<img src="attachment:Capture%20d%E2%80%99e%CC%81cran%202023-12-19%20a%CC%80%2023.23.08.png" width="800"/>
-</div>
+![My_photo](diffusion_model.png)
 
 1. Forward diffusion process — The forward diffusion process is the Markov chain of diffusion steps in which we slowly and randomly add noise to the original data.
 
