@@ -225,7 +225,7 @@ print_params(net)
 
 Diffusion models are a class of generative AI models that generate high-resolution images of varying quality. They work by gradually adding Gaussian noise to the original data in the forward diffusion process and then learning to remove the noise in the reverse diffusion process. They are latent variable models referring to a hidden continuous feature space, look similar to VAEs(Variational Autoencoders), and are loosely based on non-equilibrium thermodynamics.
 
-<img src="diffusion_model.png" width="350" title="Diffusion model">
+![png](Diffusion_model.png)
 
 1. Forward diffusion process — The forward diffusion process is the Markov chain of diffusion steps in which we slowly and randomly add noise to the original data.
 
@@ -560,9 +560,7 @@ On the other hand, fine-tuning by LoRA does not need to calculate the gradient f
 
 The following figure from the paper illustrates how LoRA works. 
 
-<div>
-<img src="attachment:Capture%20d%E2%80%99e%CC%81cran%202023-12-19%20a%CC%80%2016.23.53.png" width="200"/
-</div>
+![png](LoRA.png)
 
 
 In particular, we keep the weight matrix and the change-in-weights matrix seperate throughout the fine-tuning process. The forward pass becomes $h = Wx + \Delta Wx$. While in traditional fine-tuning, we update $W$ through backward propagation by negative gradient descent, LoRA frozens and does not change these weights. We updates instead the change-in-weights $\Delta W$. Denotes for simplicity $W_\phi$ as change-in-weight matrix, we have instead:
